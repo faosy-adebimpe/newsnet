@@ -1,4 +1,4 @@
-name: Deploy Next.js App
+name: Deploy Newsnet App
 
 on:
   push:
@@ -47,8 +47,3 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      # Add your deployment step here, e.g. Vercel, Netlify, custom server, etc.
-      # Example for Vercel:
-      # - name: Deploy to Vercel
-      #   run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
