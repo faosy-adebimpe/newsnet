@@ -1,26 +1,56 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* theme */
+@theme {
+    --color-body-bg: #fcfcfc;
+    --color-nav-bg-sm: #1b1b1b;
+    --color-footer-bg-sm: #2D2A2A;
+    --color-page-black: #282828;
+    --color-page-red: #f52a32;
+    --color-theme-color: #f85fd0;
+
+    /* test */
+    --test: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* base */
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+    body {
+        @apply bg-body-bg;
+    }
+
+    button {
+        @apply transition cursor-pointer hover:opacity-85;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* compoents */
+@layer components {
+    .lh-ls {
+        @apply leading-[100%] tracking-[0%];
+    }
+
+    .indicator {
+        @apply size-[10px] rounded-full bg-[#D4D4D4];
+    }
+
+    .indicator.active {
+        @apply bg-[#F52A32];
+    }
+
+
+    .footer-links {
+        @apply flex flex-col gap-[28px];
+    }
+    .footer-links a {
+        @apply text-[18px] font-bold leading-[100%] tracking-[0%] text-white;
+    }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* utilities */
+@utility container {
+    @apply p-[15px] mx-auto;
 }
