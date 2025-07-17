@@ -26,14 +26,15 @@ const Footer = () => {
                 </div>
             </div>
 
-            <input type="text" className="w-[405px] h-[48px] rounded-[5px] bg-white text-black border-none outline-none px-[16px] py-[7px] placeholder:text-[16px] placeholder:leading-[28px] placeholder:tracking-[0%] placeholder:font-regular placeholder-[#5A5A5A] mt-[25px] mb-[40px]" placeholder='Search AGC Newsnet' />
+          {/*<input type="text" className="w-[405px] h-[48px] rounded-[5px] bg-white text-black border-none outline-none px-[16px] py-[7px] placeholder:text-[16px] placeholder:leading-[28px] placeholder:tracking-[0%] placeholder:font-regular placeholder-[#5A5A5A] mt-[25px] mb-[40px]" placeholder='Search AGC Newsnet' />*/}
+          <input type="text" className="w-full h-[48px] rounded-[5px] bg-white text-black border-none outline-none px-[16px] py-[7px] placeholder:text-[16px] placeholder:leading-[28px] placeholder:tracking-[0%] placeholder:font-regular placeholder-[#5A5A5A] mt-[25px] mb-[40px]" placeholder='Search AGC Newsnet' />
 
             <div className='grid grid-cols-3 gap-[60px]'>
               <div className="footer-links">
                 <a href="#">Home</a>
                 <a href="#">Africa</a>
                 <a href="#">Politics</a>
-              </div>
+              </div> 
               <div className="footer-links">
                 <a href="#">Business</a>
                 <a href="#">Sport</a>
