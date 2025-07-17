@@ -7,6 +7,9 @@ import Footer from '@/components/footers/Footer';
 export const metadata: Metadata = {
     title: 'NEWSNET',
     description: 'A simplified news platform',
+    icons: {
+        icon: '/favicon.png',
+    }
 };
 
 export default function RootLayout({
